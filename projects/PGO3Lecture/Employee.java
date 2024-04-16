@@ -1,4 +1,4 @@
-package PGO2;
+package PGO3Lecture;
 public class Employee {
     public String Fname;
     public String Lname;
