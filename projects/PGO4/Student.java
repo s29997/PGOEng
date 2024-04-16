@@ -1,6 +1,6 @@
+package PGO4;
 import java.util.ArrayList;
 import java.util.List;
-
 public class Student {
     public String fname;
     public String lname;
