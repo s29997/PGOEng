@@ -1,3 +1,5 @@
+package PGO5;
+
 public class Main {
     public static void main(String[] args) {
     User user1=new User("ab322@pjwstk.edu.pl");

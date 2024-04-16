@@ -1,3 +1,5 @@
+package PGO5;
+
 public class Product {
     private String name;
     private double price;
