@@ -6,7 +6,7 @@ public class Ship {
     public int MaxLoad;
     public int MaxContainers;
     public Container[] containers;
-
+    }
     public void AddContainer(Container container) {
         if (containers == null) {
             containers = new Container[MaxContainers];
