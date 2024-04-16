@@ -1,8 +1,6 @@
 package PGO4;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-
 public class Student {
     public String fname;
     public String lname;
@@ -12,7 +10,6 @@ public class Student {
     public List<Double> grades = new ArrayList<>();
     private static int maxAmountOfGrades = 20;
     private static double[] allowedGradeValues = {2, 3.5, 3, 3.5, 4, 4.5, 5};
-
     public Student(String fname, String lname, String indexNumber, String email, String address) {
         this.fname = fname;
         this.lname = lname;
