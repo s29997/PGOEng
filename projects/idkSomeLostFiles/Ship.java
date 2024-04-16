@@ -1,3 +1,7 @@
+package idkSomeLostFiles;
+
+import idkSomeLostFiles.Container;
+
 public class Ship {
     public String Name;
     public int Serial;
@@ -25,4 +29,3 @@ public class Ship {
         z++;
     }
 }
-

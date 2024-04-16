@@ -1,3 +1,4 @@
+package PGO2;
 public class Employee {
     public String Fname;
     public String Lname;
