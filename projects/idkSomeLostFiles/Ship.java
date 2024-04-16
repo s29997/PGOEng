@@ -1,4 +1,4 @@
-package idkSomeLostFiles;
+/*package idkSomeLostFiles;
 import idkSomeLostFiles.Container;
 public class Ship {
     public String Name;
@@ -11,7 +11,7 @@ public class Ship {
         if (containers == null) {
             containers = new Container[MaxContainers];
         }
-/*          SOME UNFINISHED S HERE \/
+          SOME UNFINISHED S HERE \/
         int currentWeightShip = 0;
         for (int i = 0; i < ; i++) {
             currentWeightShip += container.currentWeight;
@@ -21,6 +21,6 @@ public class Ship {
         }
         if (containers.length + 1 > MaxContainers) {
             throw new IllegalArgumentException("too many containers!");
-        }*/
+        }
     }
-}
+}*/
