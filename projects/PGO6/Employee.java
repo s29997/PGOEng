@@ -1,14 +1,12 @@
 package PGO6;
-import java.util.ArrayList;
 public class Employee {
     protected String firstName;
     protected String lastName;
     protected String address;
     protected String email;
-    protected String pesel; // social security number (PESEL)
+    protected String pesel;
     protected int yearOfEmployment;
-
-    // Constructor
+    int currentYear = 2024;
     public Employee(String firstName, String lastName, String address, String email, String pesel, int yearOfEmployment) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -18,10 +16,6 @@ public class Employee {
         this.yearOfEmployment = yearOfEmployment;
     }
     public int calculateBaseSalary() {
-        int baseSalary = 3000 + (1000 * (2024 - yearOfEmployment)); // Assuming the current year is 2024
-        return baseSalary;
-    }
-    public int calculateSalary() {
-        return calculateBaseSalary();
+        return 3000 + (1000 * (currentYear - yearOfEmployment));
     }
 }
