@@ -1,10 +1,8 @@
 package PGO7;
 import java.util.ArrayList;
 import java.util.List;
-
 public class Students {
     private static List<Student> studentList = new ArrayList<>();
-
     public static void promoteAllStudents() {
         for (Student student : studentList) {
             if (!student.getStatus().equals("graduate")) {
@@ -16,7 +14,6 @@ public class Students {
             }
         }
     }
-
     public static void displayInfoAboutAllStudents() {
         for (Student student : studentList) {
             System.out.println("Name: " + student.getFirstName() + " " + student.getLastName());
@@ -31,7 +28,6 @@ public class Students {
             System.out.println();
         }
     }
-
     public static void addStudent(Student student) {
         studentList.add(student);
     }
