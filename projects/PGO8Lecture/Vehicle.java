@@ -44,8 +44,8 @@ public class Vehicle {
     }
     private void setRegistrationNumber(String registrationNumber) {
         this.registrationNumber = registrationNumber;
-
-    private void DisplayInfo() {
     }
-
+    public void DisplayInfo() {
+        System.out.println("Diz iz a Vegigle");
+    }
 }
