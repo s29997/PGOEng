@@ -12,7 +12,7 @@ public class Watercraft {
         this.registrationNumber = registrationNumber;
         this.setYearOfProduction(yearOfProduction);
     }
-
+///
     public String getColor() {
         return color;
     }
@@ -25,9 +25,7 @@ public class Watercraft {
     public String getRegistrationNumber() {
         return registrationNumber;
     }
-
 ///
-
     private void setColor(String color) {
         this.color = color;
     }
@@ -38,14 +36,17 @@ public class Watercraft {
             throw new IllegalArgumentException("wrong year!");
         }
     }
-
     private void setModel(String model) {
         this.model = model;
     }
     private void setRegistrationNumber(String registrationNumber) {
         this.registrationNumber = registrationNumber;
     }
+///
     public void DisplayInfo() {
-        System.out.println("Watercraft");
+        System.out.println(color);
+        System.out.println(model);
+        System.out.println(yearOfProduction);
+        System.out.println(registrationNumber);
     }
 }
