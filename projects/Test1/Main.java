@@ -5,5 +5,6 @@ public class Main {
         Marina Marina1 = new Marina("Alpha", "sdfgefw", 50);
         Watercraft w1 = new Watercraft("yellow", "submarine", "OceanGate 1", 2019);
         Marina1.addWatercraft(w1);
+        Marina1.removeWatercraft(w1);
     }
 }

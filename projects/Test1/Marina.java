@@ -10,7 +10,7 @@ public class Marina {
     public Marina(String name, String adress, int maxWatercraftCapacity) {
         this.setName(name);
         this.setAdress(adress);
-        this.setMaxWatercraftCapacity(maxWatercraftCapacity);
+        this.setMaxWatercraftCapacity(50);
     }
 
     public void setName(String name) {
@@ -44,9 +44,28 @@ public class Marina {
     public void addWatercraft(Watercraft watercraft) {
         if (watercrafts.size()>= getMaxWatercraftCapacity() ){
             throw new IllegalArgumentException("womp womp. not enough space");
-        }else{
-            watercrafts.add(watercraft);
         }
+        if (checkIfWatercraftIsInMarina(watercraft)) {
+            throw new IllegalArgumentException("it's not minecraft. You can't duplicate items! (Watercraft is already in garage)");
+        }
+        watercrafts.add(watercraft);
+    }
+    public void removeWatercraft(Watercraft watercraft) {
+        if (watercrafts.size() == 0) {
+            throw new IllegalArgumentException("There's no watercrafts in this garage!");
+        }
+        if (!checkIfWatercraftIsInMarina(watercraft)){
+            throw new IllegalArgumentException("There's no such vehicle to delete!");
+        }
+        this.watercrafts.remove(watercraft);
+    }
+
+    private boolean checkIfWatercraftIsInMarina(Watercraft watercraft){
+        for (int i = 0; i < watercrafts.size(); i++) {
+            Watercraft WatecraftInMarina = watercrafts.get(i);
+            if (WatecraftInMarina.getRegistrationNumber().equals(watercraft.getRegistrationNumber()))
+                return true;
+        }
+        return false;
     }
 }
-
