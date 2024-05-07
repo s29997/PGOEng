@@ -14,7 +14,11 @@ public class Marina {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name == null) {
+            throw new IllegalArgumentException("Cant be null name");
+        }else{
+            this.name = name;
+        }
     }
 
     public void setAdress(String adress) {
@@ -29,7 +33,7 @@ public class Marina {
         return MaxWatercraftCapacity;
     }
 
-    public void addWatercraft (Watercraft watercraft) {
+    public void addWatercraft(Watercraft watercraft) {
         if (watercrafts.size()>= getMaxWatercraftCapacity() ){
             throw new IllegalArgumentException("womp womp. not enough space");
         }else{
