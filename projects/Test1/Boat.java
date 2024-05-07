@@ -2,8 +2,8 @@ package Test1;
 
 public class Boat extends Watercraft {
     private boolean IsEletric;
-    public Boat(String brand, String model, String registrationNumber, Integer yearOfProduction, boolean IsElectric) {
-        super(brand, model, registrationNumber, yearOfProduction);
+    public Boat(String color, String model, String registrationNumber, Integer yearOfProduction, boolean IsElectric) {
+        super(color, model, registrationNumber, yearOfProduction);
         this.setEletric(IsEletric);
     }
     public void setEletric(boolean eletric) {

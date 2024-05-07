@@ -35,7 +35,7 @@ public class Watercraft {
         if (yearOfProduction >= 0){
             this.yearOfProduction = yearOfProduction;
         }else{
-            throw new IllegalArgumentException("wrong");
+            throw new IllegalArgumentException("wrong year!");
         }
     }
 
