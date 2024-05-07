@@ -22,11 +22,19 @@ public class Marina {
     }
 
     public void setAdress(String adress) {
-        this.adress = adress;
+        if (adress == null) {
+            throw new IllegalArgumentException("Cant be null adress");
+        }else{
+            this.adress = adress;
+        }
     }
 
     public void setMaxWatercraftCapacity(int maxWatercraftCapacity) {
-        MaxWatercraftCapacity = maxWatercraftCapacity;
+        if (maxWatercraftCapacity <= 0) {
+            throw new IllegalArgumentException("Cant be negative capacity bruh");
+        }else{
+            MaxWatercraftCapacity = maxWatercraftCapacity;
+        }
     }
 
     public int getMaxWatercraftCapacity() {
