@@ -10,6 +10,5 @@ public class Main {
         g.addVehicle(t);
         g.addVehicle(v);
         v.DisplayInfo();
-
     }
 }
