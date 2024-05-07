@@ -29,7 +29,7 @@ public class Marina {
         return MaxWatercraftCapacity;
     }
 
-    public void addVehicle(Watercraft watercraft) {
+    public void addWatercraft (Watercraft watercraft) {
         if (watercrafts.size()>= getMaxWatercraftCapacity() ){
             throw new IllegalArgumentException("womp womp. not enough space");
         }else{
