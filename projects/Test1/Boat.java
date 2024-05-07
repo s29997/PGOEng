@@ -9,12 +9,29 @@ public class Boat extends Watercraft {
         this.setBoatType(boatType);
         this.setCapacity(capacity);
     }
-
-    public void setBoatType(String boatType) {
+///
+    private void setBoatType(String boatType) {
         BoatType = boatType;
     }
-
-    public void setCapacity(int capacity) {
-        Capacity = capacity;
+    private void setCapacity(int capacity) {
+        if (Capacity <= 0) {
+            throw new IllegalArgumentException("cant be negative weight");
+        }else {
+            Capacity = capacity;
+        }
+    }
+///
+    public String getBoatType() {
+        return BoatType;
+    }
+    public int getCapacity() {
+        return Capacity;
+    }
+///
+    @Override
+    public void DisplayInfo() {
+        super.DisplayInfo();
+        System.out.println(BoatType);
+        System.out.println(Capacity);
     }
 }
