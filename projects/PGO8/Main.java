@@ -41,17 +41,14 @@ public class Main {
         Product product5 = new Product("Product 2", 15, "3563163156");
         Product product6 = new Product("Product 3", 20, "543613546234");
 
-        // Create categories using different constructors
         Category mainCategory = new Category();
         Category electronicsCategory = new Category("Electronics");
         Category groceryCategory = new Category("Grocery", new ArrayList<>());
 
-        // Add one product to each category
         mainCategory.addProduct(product5);
         electronicsCategory.addProduct(product4);
         groceryCategory.addProduct(product6);
 
-        // Print category details
         System.out.println(mainCategory.getName() + ": " + mainCategory.getProducts().size() + " products");
         System.out.println(electronicsCategory.getName() + ": " + electronicsCategory.getProducts().size() + " products");
         System.out.println(groceryCategory.getName() + ": " + groceryCategory.getProducts().size() + " products");
@@ -60,13 +57,11 @@ public class Main {
         ShoppingCart cart2 = new ShoppingCart(user1);
         ShoppingCart cart3 = new ShoppingCart(user2, new ArrayList<>());
 
-        // Add products to carts
         cart1.addProduct(product1);
         cart1.addProduct(product2);
         cart2.addProduct(product1);
         cart3.addProduct(product2);
 
-        // Remove a product from cart1
         cart1.removeProduct(product1);
 
         System.out.println("Total price in cart1: $" + cart1.pay());
