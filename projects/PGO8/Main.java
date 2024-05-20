@@ -36,7 +36,7 @@ public class Main {
         displayProductInfo(product2);
         displayProductInfo(product3);
 
-// Create products
+        // Create products
         Product product4 = new Product("Product 1", 10, "sdhthrth");
         Product product5 = new Product("Product 2", 15, "3563163156");
         Product product6 = new Product("Product 3", 20, "543613546234");
@@ -47,15 +47,31 @@ public class Main {
         Category groceryCategory = new Category("Grocery", new ArrayList<>());
 
         // Add one product to each category
-        mainCategory.addProduct(product1);
-        electronicsCategory.addProduct(product2);
-        groceryCategory.addProduct(product3);
+        mainCategory.addProduct(product5);
+        electronicsCategory.addProduct(product4);
+        groceryCategory.addProduct(product6);
 
         // Print category details
         System.out.println(mainCategory.getName() + ": " + mainCategory.getProducts().size() + " products");
         System.out.println(electronicsCategory.getName() + ": " + electronicsCategory.getProducts().size() + " products");
         System.out.println(groceryCategory.getName() + ": " + groceryCategory.getProducts().size() + " products");
 
+        ShoppingCart cart1 = new ShoppingCart();
+        ShoppingCart cart2 = new ShoppingCart(user1);
+        ShoppingCart cart3 = new ShoppingCart(user2, new ArrayList<>());
+
+        // Add products to carts
+        cart1.addProduct(product1);
+        cart1.addProduct(product2);
+        cart2.addProduct(product1);
+        cart3.addProduct(product2);
+
+        // Remove a product from cart1
+        cart1.removeProduct(product1);
+
+        System.out.println("Total price in cart1: $" + cart1.pay());
+        System.out.println("Total price in cart2: $" + cart2.pay());
+        System.out.println("Total price in cart3: $" + cart3.pay());
     }
     public static void displayUserInfo(User user) {
         System.out.println("User Information:");
