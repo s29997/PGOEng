@@ -48,6 +48,7 @@ public class Main {
         mainCategory.addProduct(product5);
         electronicsCategory.addProduct(product4);
         groceryCategory.addProduct(product6);
+        groceryCategory.removeProduct(product6);
 
         System.out.println(mainCategory.getName() + ": " + mainCategory.getProducts().size() + " products");
         System.out.println(electronicsCategory.getName() + ": " + electronicsCategory.getProducts().size() + " products");
