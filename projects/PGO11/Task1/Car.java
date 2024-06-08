@@ -23,6 +23,6 @@ public class Car implements Comparable<Car> {
 
     @Override
     public String toString() {
-        return "Car{model='" + model + "', year=" + year + '}';
+        return "Car "+ "model: " + model + ", year: " + year + '}';
     }
 }
