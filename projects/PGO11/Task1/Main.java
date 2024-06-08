@@ -19,8 +19,8 @@ public class Main {
 
         Collections.sort(cars);
 
-        for (Car car : cars) {
-            System.out.println(car);
+        for (int i = 0; i < cars.size(); i++) {
+            System.out.println(cars.get(i));
         }
     }
 }
