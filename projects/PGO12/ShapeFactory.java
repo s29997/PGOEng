@@ -8,7 +8,7 @@ public class ShapeFactory {
     private Random random;
 
     public ShapeFactory() {
-        this.shapeType = ShapeType.RECTANGLE; // Default shape type
+        this.shapeType = ShapeType.RECTANGLE;
         this.random = new Random();
     }
 
