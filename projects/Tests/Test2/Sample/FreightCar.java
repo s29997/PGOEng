@@ -1,8 +1,8 @@
-package Tests.Test2;
+package Tests.Test2.Sample;
 
 import java.util.Objects;
 
-public class RefrigeratedCar implements Car {
+public class FreightCar implements Car {
 
     private String id;
     private int weight;
@@ -10,24 +10,14 @@ public class RefrigeratedCar implements Car {
     private  boolean isDangerous;
     private int maxWeight=10000;
     private int maxCapacity;
-    private int temp;
 
-    public RefrigeratedCar(String id, int temp, int weight, boolean isLiquid, boolean isDangerous, int maxWeight, int maxCapacity) {
+    public FreightCar(String id, int weight, boolean isLiquid, boolean isDangerous, int maxWeight, int maxCapacity) {
         setId(id);
-        setTemp(temp);
         setWeight(weight);
         setLiquid(isLiquid);
         setDangerous(isDangerous);
         setMaxWeight(maxWeight);
         setMaxCapacity(maxCapacity);
-    }
-
-    public int getTemp() {
-        return temp;
-    }
-
-    public void setTemp(int temp) {
-        this.temp = temp;
     }
 
     public void setId(String id) {
@@ -132,7 +122,7 @@ public class RefrigeratedCar implements Car {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof RefrigeratedCar that)) return false;
+        if (!(o instanceof FreightCar that)) return false;
         return Objects.equals(id, that.id);
     }
 
