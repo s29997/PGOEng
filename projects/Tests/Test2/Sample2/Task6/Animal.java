@@ -1,4 +1,4 @@
-package Tests.Test2.Test.Task6;
+package Tests.Test2.Sample2.Task6;
 
 /*
 An abstract class in Java is a class that cannot be

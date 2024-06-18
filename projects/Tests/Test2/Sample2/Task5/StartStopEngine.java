@@ -1,4 +1,4 @@
-package Tests.Test2.Test.task2;
+package Tests.Test2.Sample2.Task5;
 interface StartStopEngine {
     void startEngine();
     void stopEngine();

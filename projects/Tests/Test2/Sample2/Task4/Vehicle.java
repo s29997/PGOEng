@@ -1,4 +1,4 @@
-package Tests.Test2.Test.Task5;
+package Tests.Test2.Sample2.Task4;
 
 abstract class Vehicle implements StartStopEngine, Refuel {
     private double fuelTankCapacity;

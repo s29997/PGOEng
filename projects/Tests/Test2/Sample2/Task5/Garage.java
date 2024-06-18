@@ -1,4 +1,4 @@
-package Tests.Test2.Test.Task5;
+package Tests.Test2.Sample2.Task5;
 
 import java.util.ArrayList;
 import java.util.List;

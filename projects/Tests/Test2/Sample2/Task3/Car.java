@@ -1,4 +1,4 @@
-package Tests.Test2.Test.Task5;
+package Tests.Test2.Sample2.Task3;
 
 class Car extends Vehicle implements DriveStop {
     private double maxSpeed;
