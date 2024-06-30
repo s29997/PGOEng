@@ -65,7 +65,8 @@ public class Client {
     }
 
     public void upgradeLicense(SoftwareLicence license, String type) {
-        for (Subscription sub : subscriptions) {
+        for (Subscription subscription : subscriptions) {
+            subscription.setActive();
         }
         System.out.println("License upgraded to: " + type);
     }

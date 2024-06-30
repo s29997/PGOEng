@@ -29,4 +29,9 @@ public class Subscription {
     public boolean isActive() {
         return this.active && this.renewalPeriod > 0;
     }
+    public void setActive(){
+        if(!active){
+            active=true;
+        }
+    }
 }
